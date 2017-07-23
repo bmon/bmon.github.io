@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brendan Roy</title>
-    <link>https://brendanr.net/</link>
-    <description>Recent content on Brendan Roy</description>
+    <title>Blogs on Brendan Roy</title>
+    <link>https://brendanr.net/blog/</link>
+    <description>Recent content in Blogs on Brendan Roy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/bmon&#34;&gt;Brendan Roy&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://brendanr.net/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://brendanr.net/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://brendanr.net/about/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/about/</guid>
-      <description>all about me</description>
-    </item>
     
     <item>
       <title>Hello World!</title>
@@ -49,15 +40,6 @@ Emphasis, aka italics, with asterisks or underscores.
 Strong emphasis, aka bold, with asterisks or underscores.
 Combined emphasis with asterisks and underscores.
 Strikethrough uses two tildes. Scratch this.</description>
-    </item>
-    
-    <item>
-      <title>Resume/CV</title>
-      <link>https://brendanr.net/resume/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/resume/</guid>
-      <description>all about me</description>
     </item>
     
   </channel>

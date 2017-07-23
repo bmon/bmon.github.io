@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on brendanr.net</title>
+    <title>Tags on Brendan Roy</title>
     <link>https://brendanr.net/tags/</link>
-    <description>Recent content in Tags on brendanr.net</description>
+    <description>Recent content in Tags on Brendan Roy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/bmon&#34;&gt;Brendan Roy&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://brendanr.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bar</title>
+      <link>https://brendanr.net/tags/bar/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/tags/bar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foo</title>
+      <link>https://brendanr.net/tags/foo/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/tags/foo/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

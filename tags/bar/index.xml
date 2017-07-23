@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Brendan Roy</title>
-    <link>https://brendanr.net/</link>
-    <description>Recent content on Brendan Roy</description>
+    <title>Bar on Brendan Roy</title>
+    <link>https://brendanr.net/tags/bar/</link>
+    <description>Recent content in Bar on Brendan Roy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/bmon&#34;&gt;Brendan Roy&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://brendanr.net/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://brendanr.net/tags/bar/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,21 +27,6 @@
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://brendanr.net/blog/hello/</guid>
-      <description>This is a temporary post I can use to test the frameworks I&amp;rsquo;m using for this blog. Posts are rendered into html from markdown using Hugo.
-H1 H2 H3 H4 H5 H6 Alternatively, for H1 and H2, an underline-ish style:
-Alt-H1 Alt-H2
-Emphasis, aka italics, with asterisks or underscores.
-Strong emphasis, aka bold, with asterisks or underscores.
-Combined emphasis with asterisks and underscores.
-Strikethrough uses two tildes. Scratch this.</description>
-    </item>
-    
-    <item>
-      <title>Hello World!</title>
-      <link>https://brendanr.net/blog/hello2/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/blog/hello2/</guid>
       <description>This is a temporary post I can use to test the frameworks I&amp;rsquo;m using for this blog. Posts are rendered into html from markdown using Hugo.
 H1 H2 H3 H4 H5 H6 Alternatively, for H1 and H2, an underline-ish style:
 Alt-H1 Alt-H2
