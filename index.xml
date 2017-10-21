@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/bmon&#34;&gt;Brendan Roy&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://brendanr.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>e-portfolio</title>
+      <link>https://brendanr.net/portfolio/</link>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/portfolio/</guid>
+      <description>e-Portfolio Part 2: Brendan Roy (z5017725)
+Development Experience Reflection My time at Sentia has continued to be a great learning experience, and has been very enjoyable. Ive been able to continue to develop many of my skills and improve my technical understanding in several areas. In addition, Ive also had many opportunities to get experience and and improve my communication skills.
+Ive been able to continue to improve my technical skills regarding setup and maintenance of application servers.</description>
+    </item>
     
     <item>
       <title>About</title>
