@@ -27,14 +27,5 @@ Combined emphasis with asterisks and underscores.
 Strikethrough uses two tildes. Scratch this.</description>
     </item>
     
-    <item>
-      <title>Resume/CV</title>
-      <link>https://brendanr.net/resume/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/resume/</guid>
-      <description>all about me</description>
-    </item>
-    
   </channel>
 </rss>
