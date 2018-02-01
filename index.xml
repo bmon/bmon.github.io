@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/bmon&#34;&gt;Brendan Roy&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Wed, 18 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://brendanr.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://brendanr.net/about/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/about/</guid>
+      <description>Hi, I&amp;rsquo;m Brendan. I&amp;rsquo;m an Australian software engineer with a background in web development. I listen to loads of music, play videogames with friends, and back the Swans. At other times you might find me playing tennis, jamming on a personal project, or fixing my Arch (btw) install.
+Hopefully you&amp;rsquo;ll find this blog filled with interesting posts about linux, web stack tech, and maybe even the occasional netsec post. If you would like to chat, tweet at me or shoot me an email.</description>
+    </item>
     
     <item>
       <title>e-portfolio</title>
@@ -24,35 +34,11 @@ Ive been able to continue to improve my technical skills regarding setup and mai
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://brendanr.net/about/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/about/</guid>
-      <description>all about me</description>
-    </item>
-    
-    <item>
       <title>Hello World!</title>
       <link>https://brendanr.net/blog/hello/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://brendanr.net/blog/hello/</guid>
-      <description>This is a temporary post I can use to test the frameworks I&amp;rsquo;m using for this blog. Posts are rendered into html from markdown using Hugo.
-H1 H2 H3 H4 H5 H6 Alternatively, for H1 and H2, an underline-ish style:
-Alt-H1 Alt-H2
-Emphasis, aka italics, with asterisks or underscores.
-Strong emphasis, aka bold, with asterisks or underscores.
-Combined emphasis with asterisks and underscores.
-Strikethrough uses two tildes. Scratch this.</description>
-    </item>
-    
-    <item>
-      <title>Hello World!</title>
-      <link>https://brendanr.net/blog/hello2/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/blog/hello2/</guid>
       <description>This is a temporary post I can use to test the frameworks I&amp;rsquo;m using for this blog. Posts are rendered into html from markdown using Hugo.
 H1 H2 H3 H4 H5 H6 Alternatively, for H1 and H2, an underline-ish style:
 Alt-H1 Alt-H2

@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>About</title>
-      <link>https://brendanr.net/about/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/about/</guid>
-      <description>all about me</description>
-    </item>
-    
-    <item>
       <title>Hello World!</title>
       <link>https://brendanr.net/blog/hello/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
