@@ -13,16 +13,6 @@
     
     
     <item>
-      <title>About</title>
-      <link>https://brendanr.net/about/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://brendanr.net/about/</guid>
-      <description>Hi, I&amp;rsquo;m Brendan. I&amp;rsquo;m an Australian software engineer with a background in web development. I listen to loads of music, play videogames with friends, and back the Swans. At other times you might find me playing tennis, jamming on a personal project, or fixing my Arch (btw) install.
-Hopefully you&amp;rsquo;ll find this blog filled with interesting posts about linux, web stack tech, and maybe even the occasional netsec post. If you would like to chat, tweet at me or shoot me an email.</description>
-    </item>
-    
-    <item>
       <title>Hello World!</title>
       <link>https://brendanr.net/blog/hello/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
@@ -35,6 +25,16 @@ Emphasis, aka italics, with asterisks or underscores.
 Strong emphasis, aka bold, with asterisks or underscores.
 Combined emphasis with asterisks and underscores.
 Strikethrough uses two tildes. Scratch this.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://brendanr.net/about/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/about/</guid>
+      <description>Hi, I&amp;rsquo;m Brendan. I&amp;rsquo;m an Australian software engineer with a background in web development. I listen to loads of music, play videogames with friends, and back the Swans. At other times you might find me playing tennis, jamming on a personal project, or fixing my Arch (btw) install.
+Hopefully you&amp;rsquo;ll find this blog filled with interesting posts about linux, web stack tech, and maybe even the occasional netsec post. If you would like to chat, tweet at me or shoot me an email.</description>
     </item>
     
   </channel>
