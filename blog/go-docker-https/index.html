@@ -99,13 +99,13 @@
         
 
 <p>I&rsquo;ve been building a lot of webhooks lately, and more often than not, I need serve my applications over HTTPS.
-A common way of quickly achieving this is by utilsing <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>, however it can be a bit fiddly to setup. I&rsquo;d really like to be able to automate the process entirely, including certificate renewal.
+A common way of quickly achieving this is by utilising <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>, however it can be a bit fiddly to setup. I&rsquo;d really like to be able to automate the process entirely, including certificate renewal.
 I&rsquo;ve been building my applications using docker, and I&rsquo;d like to keep the build process and container images as lightweight as possible.
 Lastly, I&rsquo;d like to have the entire process as application code, so I can easily change and re-deploy things on the fly. Also, having no ops/shell scripts allows my applications to be portable and easily deployed to many different environments.</p>
 
 <p>Fortunately, there is a way to achieve all of these things, using Go. It all starts with the <a href="https://godoc.org/golang.org/x/crypto/acme/autocert">acme/autocert</a> package. For the unaware, ACME stands for <em>Automated Certificate Management Environment</em>, a protocol which allows for low cost and automated TLS certificate generation and verification.</p>
 
-<p>Let&rsquo;s Encrypt utilises ACME to provide free domain-validated certficates to anybody who can verify that they control the domain they&rsquo;re requesting to be certified.
+<p>Let&rsquo;s Encrypt utilises ACME to provide free domain-validated certificates to anybody who can verify that they control the domain they&rsquo;re requesting to be certified.
 One way to verify is for an application to request a secret token from Let&rsquo;s Encrypt (over a secure connection), and then Let&rsquo;s Encrypt will make a HTTP request to the domain name being verified.
 If the application can serve the secret token back to Let&rsquo;s Encrypt, it&rsquo;s verified that is has control of the domain, and Let&rsquo;s Encrypt will sign a certificate for use on the domain.</p>
 
@@ -116,7 +116,7 @@ For this example, I will be hosting my application at <code>kappa.serv.brendanr.
 
 <p>Next, you&rsquo;ll need a server which you can deploy your application to. Make sure to configure your DNS server to point your domain(s) to your server.</p>
 
-<p>Last you&rsquo;ll need to make use of that <a href="https://godoc.org/golang.org/x/crypto/acme/autocert">acme/autocert</a> package I mentioned earlier to request and respond to ACME challenges. There is a great <a href="https://github.com/kjk/go-cookbook/blob/master/free-ssl-certificates/main.go">sample implmentation</a> written by <a href="https://blog.kowalczyk.info/">Krzysztof Kowalczyk</a> which you should check out, but I&rsquo;m going to show you a cut down verstion to better explain how it works.</p>
+<p>Last you&rsquo;ll need to make use of that <a href="https://godoc.org/golang.org/x/crypto/acme/autocert">acme/autocert</a> package I mentioned earlier to request and respond to ACME challenges. There is a great <a href="https://github.com/kjk/go-cookbook/blob/master/free-ssl-certificates/main.go">sample implementation</a> written by <a href="https://blog.kowalczyk.info/">Krzysztof Kowalczyk</a> which you should check out, but I&rsquo;m going to show you a cut down version to better explain how it works.</p>
 
 <h2 id="our-application">Our Application</h2>
 
@@ -164,7 +164,7 @@ mux.HandleFunc(&quot;/&quot;, func(w http.ResponseWriter, r *http.Request) {
 </code></pre>
 
 <p>This block is setting up some configuration for ACME. <code>Prompt: autocert.AcceptTOS</code> specifies that you accept the Let&rsquo;s Encrypt <a href="https://letsencrypt.org/repository/">Terms of Service</a>. The <code>Cache</code> field specifies if, and how, the autocert package should cache certificates. Let&rsquo;s Encrypt has <a href="https://letsencrypt.org/docs/rate-limits/">rate limits</a> which limit how often you can request a certificate, so it&rsquo;s important to store certificates somewhere you can retrieve them later. Here we are specifying that the certificates should be stored in the <code>cert-cache</code> directory.
-Lastly, the <code>HostPolicy</code> allows us to whitelist which domains we wish to request certificates for. Without this setting it&rsquo;s possible for attackers to expend your rate limit allocation and possibly stop you from generating the certificates you need, so it is important.</p>
+Lastly, the <code>HostPolicy</code> allows us to whitelist which domains we wish to request certificates for. Without this setting it&rsquo;s possible for attackers to exhaust your rate limit allocation and possibly stop you from generating the certificates you need, so it is important.</p>
 
 <pre><code class="language-go">server := &amp;http.Server{
 	Addr:    &quot;:443&quot;,
@@ -242,12 +242,12 @@ ENTRYPOINT [&quot;/app&quot;]
 <ul>
 <li><strong>You have to install ca-certificates on the final image</strong>, even if your application isn&rsquo;t making TLS requests. This is because all requests your application will make to Let&rsquo;s Encrypt will be HTTPS requests, so you&rsquo;ll need the root certificates.</li>
 <li><strong>You have to expose port 80</strong>, even if you&rsquo;re not going to serve anything over HTTP. This is because the ACME challenge we are using is the HTTP challenge, which means Let&rsquo;s Encrypt needs to be able to make a HTTP connection to our application.</li>
-<li><strong>You should use a volume for your cache dir</strong>, so your certificates are stored, even between deployments. If you don&rsquo;t do this you will likely hit Let&rsquo;s Encrypt ratelimits.</li>
+<li><strong>You should use a volume for your cache dir</strong>, so your certificates are stored, even between deployments. If you don&rsquo;t do this you will likely hit Let&rsquo;s Encrypt rate limits.</li>
 </ul>
 
-<h1 id="wrapup">Wrapup</h1>
+<h2 id="wrapup">Wrapup</h2>
 
-<p>I hope this article helps save you some time and headscratching when setting up your next web service, or at the very least makes you interested in writing a little more Go ;)</p>
+<p>I hope this article helps save you some time and head scratching when setting up your next web service, or at the very least makes you interested in writing a little more Go ;)</p>
 
 <p>The full code is available at <a href="https://github.com/bmon/go-web-base">https://github.com/bmon/go-web-base</a></p>
 
