@@ -187,7 +187,7 @@ It&rsquo;s possible to set up the HTTP server to redirect to HTTPS as well - che
 
 <h2 id="you-promised-me-docker">You promised me Docker</h2>
 
-<p>There&rsquo;s a couple of gotchas you&rsquo;ll need to dodge when containerizing this application.  the full dockerfile. I am making use of modules, and this dockerfile is a modified version of Pierre Prinetti&rsquo;s wonderful <a href="https://medium.com/@pierreprinetti/the-go-1-11-dockerfile-a3218319d191">Go 1.11 web service Dockerfile</a></p>
+<p>There&rsquo;s a couple of gotchas you&rsquo;ll need to dodge when containerizing this application. Here&rsquo;s the full dockerfile. I am making use of modules, and this dockerfile is a modified version of Pierre Prinetti&rsquo;s wonderful <a href="https://medium.com/@pierreprinetti/the-go-1-11-dockerfile-a3218319d191">Go 1.11 web service Dockerfile</a>.</p>
 
 <pre><code class="language-dockerfile"># Accept the Go version for the image to be set as a build argument.
 # Default to Go 1.11
@@ -240,8 +240,8 @@ ENTRYPOINT [&quot;/app&quot;]
 <p>Here&rsquo;s what you need to pay attention to:</p>
 
 <ul>
-<li><strong>You have to install ca-certificates on the final image</strong>, even if your application isn&rsquo;t making TLS requests. This is because all requests your application will make to Let&rsquo;s Encrypt will be HTTPS requests, so you&rsquo;ll need the root certificates.</li>
-<li><strong>You have to expose port 80</strong>, even if you&rsquo;re not going to serve anything over HTTP. This is because the ACME challenge we are using is the HTTP challenge, which means Let&rsquo;s Encrypt needs to be able to make a HTTP connection to our application.</li>
+<li><strong>You have to install ca-certificates on the final image</strong>, even if your application isn&rsquo;t making TLS connections. This is because all requests your application will make to Let&rsquo;s Encrypt will be HTTPS requests, so you&rsquo;ll need the root certificates.</li>
+<li><strong>You have to expose port 80</strong>, even if you&rsquo;re not going to serve anything over HTTP. This is because the ACME challenge we are using is the HTTP challenge, which means Let&rsquo;s Encrypt needs to be able to make a HTTP request to our application.</li>
 <li><strong>You should use a volume for your cache dir</strong>, so your certificates are stored, even between deployments. If you don&rsquo;t do this you will likely hit Let&rsquo;s Encrypt rate limits.</li>
 </ul>
 
