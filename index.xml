@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/bmon&#34;&gt;Brendan Roy&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://brendanr.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Free and Automatic HTTPS with Docker and Go</title>
+      <link>https://brendanr.net/blog/go-docker-https/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/blog/go-docker-https/</guid>
+      <description>I&amp;rsquo;ve been building a lot of webhooks lately, and more often than not, I need serve my applications over HTTPS. A common way of quickly achieving this is by utilsing Let&amp;rsquo;s Encrypt, however it can be a bit fiddly to setup. I&amp;rsquo;d really like to be able to automate the process entirely, including certificate renewal. I&amp;rsquo;ve been building my applications using docker, and I&amp;rsquo;d like to keep the build process and container images as lightweight as possible.</description>
+    </item>
     
     <item>
       <title>Hello World!</title>

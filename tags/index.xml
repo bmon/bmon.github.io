@@ -22,11 +22,38 @@
     </item>
     
     <item>
+      <title>Docker</title>
+      <link>https://brendanr.net/tags/docker/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Foo</title>
       <link>https://brendanr.net/tags/foo/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://brendanr.net/tags/foo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://brendanr.net/tags/go/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://brendanr.net/tags/web/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://brendanr.net/tags/web/</guid>
       <description></description>
     </item>
     
